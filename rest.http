@@ -1,0 +1,34 @@
+### get all articles
+GET http://localhost:3000/articles
+
+### post/create a new article
+POST http://localhost:3000/articles
+Content-Type: application/json
+
+{
+    "title": "JavaScript",
+    "content": "JavaScript is the world's most popular programming language.JavaScript is the programming language of the Web.JavaScript is easy to learn."
+}
+
+### delete all articles
+DELETE http://localhost:3000/articles
+
+### search for a specific article
+GET http://localhost:3000/articles/JavaScript
+
+### replace a specific article
+PUT http://localhost:3000/articles/CSS
+Content-Type: application/json
+
+{
+    "title": "CSS"
+}
+
+### update a specific article
+PATCH http://localhost:3000/articles/JavaScript
+Content-Type: application/json
+
+{
+    "title": "Java",
+    "content": "Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible"
+}
